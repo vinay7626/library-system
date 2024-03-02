@@ -1,0 +1,76 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+main {
+  padding: 2rem;
+}
+
+div.announcements marquee {
+  height: 200px;
+}
+
+div.announcements ul li {
+  margin-bottom: 30px;
+}
+
+div.events marquee {
+  height: 200px;
+}
+
+div.events ul li {
+  margin-bottom: 30px;
+}
+
+section.overview {
+  margin-bottom: 2rem;
+}
+
+section.overview > div {
+  margin-bottom: 2rem;
+}
+
+section.overview h2 {
+  margin-bottom: 1rem;
+}
+
+section.overview p {
+  margin-bottom: 1rem;
+}
+
+section.overview ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.highlights .book {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.highlights img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
