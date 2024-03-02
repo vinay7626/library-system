@@ -2,6 +2,7 @@ import './Search.css';
 import { useState } from 'react';
 import { books } from "./searchData";
 import bookcover from '../images/bookcover.png';
+import { Link } from 'react-router-dom';
 
 function Search() {
 
@@ -34,14 +35,14 @@ function Search() {
     const displayBooks = resultBooks.map((book) => {
         // console.log(book.title);
         return (
-            <a href="#">
+            <Link to={`/book/${book.id}`}>
         <div class="searchbook">
             <img src={bookcover} alt={book.title} />
             <h3>{book.title}</h3>
             <p>{book.author}</p>
             <small>{book.summary}</small>
         </div>
-        </a>
+        </Link>
         )
     })
 

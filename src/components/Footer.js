@@ -1,7 +1,7 @@
 function Footer() {
     return (   
     <footer>
-        <p>&copy; 2024 Library Management. All rights reserved.</p>
+        <p style={{color:'white'}}>&copy; 2024 Library Management. All rights reserved.</p>
     </footer>
     )
 }

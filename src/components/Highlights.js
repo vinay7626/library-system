@@ -1,5 +1,6 @@
 import { books } from './searchData';
 import bookcover from "../images/bookcover.png";
+import { Link } from 'react-router-dom';
 
 function Highlights() {
     const max = 6;
@@ -9,11 +10,13 @@ function Highlights() {
         while(i<=max){
             const randomNum = Math.floor((Math.random()*books.length))
         return (
+            <Link to={`/book/${books[randomNum].id}`}>
             <div class="book">
                     <img src={bookcover} alt={book.title} />
                     <h3>{books[randomNum].title}</h3>
                     <p>{books[randomNum].author}</p>
                 </div>
+            </Link>
         )}
     })
 
